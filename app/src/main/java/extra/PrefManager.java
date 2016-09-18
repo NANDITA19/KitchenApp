@@ -41,4 +41,12 @@ public class PrefManager
         return true;
     }
 
+    public String getUserId(){
+        return pref.getString("user_id","1");
+    }
+
+    public String getUserDisplayName(){
+        return  pref.getString("user_display_name","rutvik106");
+    }
+
 }
