@@ -37,10 +37,6 @@ public class ActivityWelcome extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
 
-
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         // Checking for first time launch - before calling setContentView()
         prefManager = new PrefManager(this);
         if (!prefManager.isFirstTimeLaunch())
@@ -56,6 +52,10 @@ public class ActivityWelcome extends AppCompatActivity
         }
 
         setContentView(R.layout.activity_welcome);
+
+        //requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
@@ -140,7 +140,7 @@ public class ActivityWelcome extends AppCompatActivity
     private void launchHomeScreen()
     {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(ActivityWelcome.this, ActivityInitial.class));
+        startActivity(new Intent(ActivityWelcome.this, Login.class));
         finish();
     }
 

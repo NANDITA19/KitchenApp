@@ -20,6 +20,12 @@
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
 
-    <string name="rs">\u20B9</string>
+
+    <!--Login-->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_google_login">Google+</string>
+    <string name="lbl_signup"><u>Sign Up</u></string>
 
 </resources>
