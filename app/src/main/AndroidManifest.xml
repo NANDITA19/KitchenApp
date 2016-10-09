@@ -19,8 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivityInitial"/>
-        <activity android:name=".TestActivityViewOrder">
-        </activity>
+        <activity android:name=".TestActivityViewOrder"/>
+        <activity android:name=".Login"/>
+        <activity android:name=".ActivityRegistration"/>
     </application>
 
 </manifest>

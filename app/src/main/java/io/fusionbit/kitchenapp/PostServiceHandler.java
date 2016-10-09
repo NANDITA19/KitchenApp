@@ -30,7 +30,6 @@ public class PostServiceHandler
     private int backOff = 2000;
 
 
-
     public interface ResponseCallback
     {
         void response(int status, String response);
@@ -71,7 +70,7 @@ public class PostServiceHandler
             {
 
 
-                post(ProjectConstants.RequestMethod.POST,serverUrl, params, callback);
+                post(ProjectConstants.RequestMethod.POST, serverUrl, params, callback);
 
                 break;
 
@@ -132,7 +131,7 @@ public class PostServiceHandler
             {
 
 
-                post(ProjectConstants.RequestMethod.PUT,serverUrl, params, callback);
+                post(ProjectConstants.RequestMethod.PUT, serverUrl, params, callback);
 
                 break;
 
@@ -314,7 +313,7 @@ public class PostServiceHandler
 
             Log.i(tag, "JSON Response Message: " + conn.getResponseMessage());
 
-            if (status == HttpURLConnection.HTTP_OK)
+            if (status == (HttpURLConnection.HTTP_OK | HttpURLConnection.HTTP_CREATED))
             {
                 String line;
                 BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
