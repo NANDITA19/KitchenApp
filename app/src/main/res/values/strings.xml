@@ -27,5 +27,5 @@
     <string name="lbl_login">Login</string>
     <string name="lbl_google_login">Google+</string>
     <string name="lbl_signup"><u>Sign Up</u></string>
-
+<!----><string name="rs">\u20B9</string>
 </resources>

@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+<!--    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@mipmap/stockphoto54179998" />
+        android:src="@mipmap/stockphoto54179998" />-->
     <io.fusionbit.kitchenapp.NonSwipeableViewPager
         android:id="@+id/vp_registration"
         android:layout_width="match_parent"
